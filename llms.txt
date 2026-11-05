@@ -4,7 +4,7 @@
 
 ## Pages
 
-- [从这里开始学习](https://xuxcode.github.io/Learning-Guide/) - 工业软件开发组的新生培养方案、学习路线、项目实践与参考资源。
+- [首页](https://xuxcode.github.io/Learning-Guide/) - 面向工业现场，在真实课题中学习。工业软件开发组的培养方案、学习路线与项目实践知识库。
 - [培养方案](https://xuxcode.github.io/Learning-Guide/guide/) - 了解小组方向、前后端培养目标与旧版方案的使用方式。
 - [后端开发](https://xuxcode.github.io/Learning-Guide/guide/backend.html) - 后端开发方向的学习顺序、知识模块、原定周数与主要目标。
 - [大数据基础](https://xuxcode.github.io/Learning-Guide/guide/big-data.html) - 大数据基础方向的学习顺序、知识模块、原定周数与主要目标。
