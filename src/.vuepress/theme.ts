@@ -5,7 +5,7 @@ import sidebar from "./sidebar.js";
 export default hopeTheme(
   {
     // 主题选项：https://theme-hope.vuejs.press/zh/config/theme/layout.html
-    hostname: "https://newzone.top",
+    hostname: "https://xuxcode.github.io",
     author: {
       name: "LearnData",
       url: "https://newzone.top",
@@ -49,7 +49,9 @@ export default hopeTheme(
           notFoundTitle: "页面不存在",
           // 主题从这个数组里随机取一条，所以拆成两句的写法永远只会显示其中一句。
           // 合并成一条：说明发生了什么 + 下一步能做什么。
-          notFoundMsg: ["这个地址下没有内容，可能已经改名或移走了。可以用上方搜索找标题，或从下面两个入口继续。"],
+          notFoundMsg: [
+            "这个地址下没有内容，可能已经改名或移走了。可以用上方搜索找标题，或从下面两个入口继续。",
+          ],
           back: "返回上一页",
           home: "回到首页",
         },
@@ -75,7 +77,7 @@ export default hopeTheme(
     fullscreen: true,
 
     // 默认为 GitHub. 同时也可以是一个完整的 URL
-    repo: "rockbenben/LearnData",
+    repo: "XuXcode/Learning-Guide",
     // 自定义仓库链接文字。默认从 `repo` 中自动推断为 "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
     repoLabel: "GitHub",
     // 是否在导航栏内显示仓库链接，默认为 `true`
@@ -89,7 +91,7 @@ export default hopeTheme(
     navbarLayout: {
       start: ["Brand"],
       center: ["Links"],
-      end: ["SocialLink", "Repo", "Outlook", "Search"],
+      end: ["Repo", "Outlook", "Search"],
     },
     // 是否在向下滚动时自动隐藏导航栏
     // navbarAutoHide: "always",
@@ -105,22 +107,11 @@ export default hopeTheme(
     // 主题功能选项：https://theme-hope.vuejs.press/zh/config/theme/feature.html
     blog: {
       articleInfo: ["Date", "PageView", "Category", "Tag", "ReadingTime"],
-      name: "清顺",
-      avatar: "/avatar_self.webp",
-      description: "迷信新工具，热衷于研究开源软件、心理学理论，定期分享探索成果",
-      intro: "/intro.html",
-      medias: {
-        GitHub: "https://github.com/rockbenben",
-        Zhihu: "https://www.zhihu.com/people/qingwhat",
-        少数派: {
-          icon: "https://newzone.top/icons/sspai.svg",
-          link: "https://sspai.com/u/zqj05i4v/posts",
-        },
-        Wechat: "https://img.newzone.top/wechat.svg",
-        Email: "mailto:learndata@newzone.top",
-        Discord: "https://discord.gg/PZTQfJ4GjX",
-        RSS: "/rss.xml",
-      },
+      name: "工业软件组学习指南",
+      avatar: "/logo.svg",
+      description:
+        "面向实验室新生的计算机技术学习路线、课程资源与项目实践指南。",
+      medias: { GitHub: "https://github.com/XuXcode/Learning-Guide" },
     },
 
     // 隐藏打印按钮
@@ -171,49 +162,8 @@ export default hopeTheme(
         assets: "iconify",
       },
 
-      // 评论配置（仅做样例，记得更换）
-      comment: {
-        /*
-      // 在本地运行 `pnpm docs:dev` 并使用非 localhost 域名时，容易出现 403 错误，移除本部分即可解决
-      provider: "Waline",
-      serverURL: "https://waline.newzone.top",
-      reaction: [
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44d.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f44f.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f60e.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f602.png",
-        "https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-y/twemoji/13.1.0/72x72/1f635-200d-1f4ab.png",
-      ],
-      // 部署 Waline：https://waline.js.org/guide/get-started.html
-      // pageview: true, // 浏览量统计
-      locales: {
-        "/": {
-          // 表情互动提示文字
-          reactionTitle: "已到达文章底部，欢迎留言、表情互动~",
-          reaction0: "赞一个",
-          reaction1: "支持下",
-          reaction2: "有点酷",
-          reaction3: "啥玩意",
-          reaction4: "看不懂",
-          // Waline 等级标签
-          admin: "盛年不重来，一日难再晨",
-          level0: "锻体",
-          level1: "炼气",
-          level2: "筑基",
-          level3: "金丹",
-          level4: "元婴",
-          level5: "化神",
-        },
-      },
-      */
-
-        // Giscus
-        provider: "Giscus",
-        repo: "rockbenben/giscus-comment",
-        repoId: "R_kgDOM_MPJA",
-        category: "Comments",
-        categoryId: "DIC_kwDOM_MPJM4CjS0P",
-      },
+      // 未配置本站评论服务前，禁用原模板的 Giscus / Waline。
+      comment: false,
 
       // 组件库
       components: {
@@ -247,7 +197,8 @@ export default hopeTheme(
         json: true,
         rss: true,
         count: 10,
-        sorter: (a, b) => Number(b.frontmatter.date) - Number(a.frontmatter.date),
+        sorter: (a, b) =>
+          Number(b.frontmatter.date) - Number(a.frontmatter.date),
       },
     },
     // https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html

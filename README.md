@@ -1,3 +1,14 @@
+# 工业软件组学习指南
+
+本仓库基于 LearnData 模板，独立部署至 **https://xuxcode.github.io/Learning-Guide/**。
+
+- 本项目使用 Node.js 24、`pnpm@12.11.2`、VuePress 2 和 Theme Hope。
+- 本地启动、文档编辑和部署说明见 [DEPLOYMENT.md](./DEPLOYMENT.md)。
+- 保持仓库名 `Learning-Guide` 和 `base: "/Learning-Guide/"` 一致。**不要将本仓库改名为 `xuxcode.github.io`**；该根站点已有独立博客。
+- 以下保留 LearnData 原始说明与归属信息，涉及原作者域名、服务、根路径和仓库改名的示例不适用于本项目。
+
+---
+
 <div align="center">
   <h1>📚 LearnData 开源笔记</h1>
   <p><strong>开源工具、效率方法、心理学探索的自我提升笔记</strong></p>

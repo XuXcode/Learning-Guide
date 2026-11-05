@@ -7,7 +7,12 @@ export default sidebar({
     "DailyRoutine",
     "Fitness",
     // 读书笔记架构更换到 docsify，不能使用相对链接
-    { text: "读书笔记", icon: "fa6-brands:readme", link: "https://newzone.top/reading/" },
+    {
+      text: "读书笔记",
+      icon: "fa6-brands:readme",
+      link: "https://xuxcode.github.io/Learning-Guide/reading/",
+      target: "_self",
+    },
     // 指定显示页面
     {
       text: "🧰 应用手册",

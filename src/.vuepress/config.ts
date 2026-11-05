@@ -14,14 +14,14 @@ import { faqSchemaPlugin } from "./plugins/faq-schema.js";
 
 export default defineUserConfig({
   // 网站路径默认为主域名。如果网站部署在子路径下，比如 xxx.com/yyy，那么 base 应该被设置为 "/yyy/"
-  base: "/",
+  base: "/Learning-Guide/",
 
   // 网站语言，默认为中文
   lang: "zh-CN",
   // 网站标题
-  title: "LearnData 开源笔记",
+  title: "工业软件组学习指南",
   // 网站描述
-  description: "开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。",
+  description: "面向实验室新生的计算机技术学习路线、课程资源与项目实践指南。",
 
   theme,
   // 是否开启页面预拉取，如果服务器宽带足够，可改为 true，会提升其他页面加载速度
@@ -32,7 +32,13 @@ export default defineUserConfig({
   templateBuild: "./src/.vuepress/templateBuild.html",
 
   // 禁止文件夹生成静态文件，参考 [VuePress 文档]（https://v2.vuepress.vuejs.org/zh/guide/page.html#routing）
-  pagePatterns: ["**/*.md", "!_temp", "!reading", "!.vuepress", "!node_modules"],
+  pagePatterns: [
+    "**/*.md",
+    "!_temp",
+    "!reading",
+    "!.vuepress",
+    "!node_modules",
+  ],
 
   plugins: [
     // 谷歌分析：填回你自己的 GA4 ID 后，取消本段与顶部 import 的注释即可启用
@@ -42,5 +48,30 @@ export default defineUserConfig({
     // FAQ 结构化数据（frontmatter faq -> FAQPage JSON-LD）
     faqSchemaPlugin(),
   ],
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [
+        {
+          // rc.137 发布包的 dev Worker 实际在 dist/worker，而非 dist/client/worker。
+          // 仅修正此依赖的开发路径，保持版本和生产搜索实现不变。
+          name: "fix-slimsearch-dev-worker-path",
+          apply: "serve",
+          enforce: "pre",
+          transform(code, id) {
+            if (
+              !id
+                .split("?")[0]
+                .replaceAll("\\", "/")
+                .endsWith("/@vuepress/plugin-slimsearch/dist/client/config.js")
+            )
+              return;
+            return code.replace(
+              /new URL\((["'`])worker\/dev\.js\1\s*,\s*import\.meta\.url\)/g,
+              'new URL("../worker/dev.js", import.meta.url)',
+            );
+          },
+        },
+      ],
+    },
+  }),
 });

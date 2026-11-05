@@ -1,7 +1,7 @@
 ---
 article: false
-title: LearnData 开源笔记
-description: 演示站：你正在浏览 LearnData 模板的默认样态。Use this template 创建仓库后部署得到的就是这套站点框架，按需替换内容即可上线属于自己的知识库。
+title: 工业软件组学习指南
+description: 面向实验室新生的计算机技术学习路线、课程资源与项目实践指南。
 icon: fa6-solid:book-open-reader
 ---
 

@@ -35,6 +35,13 @@ function readSiteConfig() {
       const descMatch = raw.match(/\bdescription\s*:\s*["']([^"']+)["']/);
       if (titleMatch) site.title = titleMatch[1].trim();
       if (descMatch) site.description = descMatch[1].trim();
+      const baseMatch = raw.match(/\bbase\s*:\s*["']([^"']+)["']/);
+      if (site.baseUrl && baseMatch) {
+        site.baseUrl = new URL(baseMatch[1], site.baseUrl).href.replace(
+          /\/$/,
+          "",
+        );
+      }
     }
   } catch {}
 

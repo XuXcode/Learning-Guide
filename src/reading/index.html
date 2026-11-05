@@ -5,22 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LearnData - 读书笔记</title>
-    <meta name="description" content="将书籍转化为你的工具书！专注实体书摘要总结，涵盖效率习惯、思维成长、沟通技巧等领域，运用费曼技巧和3-2-1训练法，助你真正吸收并运用所学知识。" />
+    <meta
+      name="description"
+      content="将书籍转化为你的工具书！专注实体书摘要总结，涵盖效率习惯、思维成长、沟通技巧等领域，运用费曼技巧和3-2-1训练法，助你真正吸收并运用所学知识。"
+    />
     <!-- 与主站一致：朱砂印章 favicon + 移动端浏览器外壳着色（宣纸/暖墨黑） -->
-    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1c1814" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="../logo.svg" type="image/svg+xml" />
+    <meta
+      name="theme-color"
+      content="#faf6ef"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#1c1814"
+      media="(prefers-color-scheme: dark)"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.cn" />
     <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
-    <link href="https://fonts.googleapis.cn/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.cn/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- vue.css 和 docsify-toc.css 已移除：reading 用自写主题接管所有样式 -->
-    <link rel="stylesheet" href="https://oss.newzone.top/@waline/3.8.0/client/dist/waline.css" />
     <script>
       // Dark mode 初始化必须 inline 在 head 早期执行避免 FOUC——其他逻辑全在 reading-app.js
       (function () {
         var saved = localStorage.getItem("reading-theme");
-        var systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.setAttribute("data-theme", saved || (systemDark ? "dark" : "light"));
+        var systemDark =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute(
+          "data-theme",
+          saved || (systemDark ? "dark" : "light"),
+        );
       })();
     </script>
     <script defer src="reading-app.js"></script>
@@ -30,9 +48,9 @@
   <body>
     <!-- 自写顶栏（替代 docsify nav.app-nav） -->
     <header class="topbar">
-      <a class="brand" href="https://newzone.top/">
+      <a class="brand" href="../">
         <span class="brand-seal">读</span>
-        <span class="brand-text">LearnData</span>
+        <span class="brand-text">工业软件组学习指南</span>
       </a>
       <nav class="nav-mid">
         <a href="https://tools.newzone.top/zh">Tools By AI</a>
@@ -43,8 +61,22 @@
         <a href="https://nav.newzone.top/">工具收藏</a>
       </nav>
       <div class="nav-right">
-        <button class="icon-btn theme-toggle" onclick="toggleReadingTheme()" aria-label="切换到夜间" title="切换到夜间">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <button
+          class="icon-btn theme-toggle"
+          onclick="toggleReadingTheme()"
+          aria-label="切换到夜间"
+          title="切换到夜间"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
         </button>
       </div>
     </header>
@@ -54,25 +86,50 @@
          - onclick 用命名函数（toggleSidebar/toggleTocDrawer）做事件流拦截，避免 docsify 同元素 listener 把状态抹掉
          - aria-expanded 由 syncAria() 同步状态
          - 无 TOC 的页面（如 README）通过 :has() 不显示 toc-toggle -->
-    <button class="sidebar-toggle" data-custom-toggle
-            onclick="toggleSidebar(event)"
-            aria-label="切换目录" aria-controls="sidebar" aria-expanded="false" title="目录">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
+    <button
+      class="sidebar-toggle"
+      data-custom-toggle
+      onclick="toggleSidebar(event)"
+      aria-label="切换目录"
+      aria-controls="sidebar"
+      aria-expanded="false"
+      title="目录"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
       </svg>
     </button>
-    <button class="toc-toggle"
-            onclick="toggleTocDrawer(event)"
-            aria-label="切换本章目录" aria-controls="page-toc" aria-expanded="false" title="本章目录">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="8" y1="6" x2="21" y2="6"/>
-        <line x1="8" y1="12" x2="21" y2="12"/>
-        <line x1="8" y1="18" x2="21" y2="18"/>
-        <circle cx="3.5" cy="6" r="0.5" fill="currentColor"/>
-        <circle cx="3.5" cy="12" r="0.5" fill="currentColor"/>
-        <circle cx="3.5" cy="18" r="0.5" fill="currentColor"/>
+    <button
+      class="toc-toggle"
+      onclick="toggleTocDrawer(event)"
+      aria-label="切换本章目录"
+      aria-controls="page-toc"
+      aria-expanded="false"
+      title="本章目录"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="8" y1="6" x2="21" y2="6" />
+        <line x1="8" y1="12" x2="21" y2="12" />
+        <line x1="8" y1="18" x2="21" y2="18" />
+        <circle cx="3.5" cy="6" r="0.5" fill="currentColor" />
+        <circle cx="3.5" cy="12" r="0.5" fill="currentColor" />
+        <circle cx="3.5" cy="18" r="0.5" fill="currentColor" />
       </svg>
     </button>
 
@@ -84,8 +141,22 @@
     </div>
 
     <!-- 回到顶部 -->
-    <button class="back-to-top" onclick="scrollToTop(event)" aria-label="回到顶部" title="回到顶部">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    <button
+      class="back-to-top"
+      onclick="scrollToTop(event)"
+      aria-label="回到顶部"
+      title="回到顶部"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
     </button>
     <script>
       window.$docsify = {
@@ -149,13 +220,19 @@
               var section = document.querySelector("section.content");
               if (!section) return;
               // 找所有不在 section 直接子的 TOC（docsify-toc 可能注入到 article 内或 main 内别处）
-              var all = Array.prototype.slice.call(document.querySelectorAll("nav.page_toc, .page_toc"));
-              var outside = all.filter(function (el) { return el.parentElement !== section; });
+              var all = Array.prototype.slice.call(
+                document.querySelectorAll("nav.page_toc, .page_toc"),
+              );
+              var outside = all.filter(function (el) {
+                return el.parentElement !== section;
+              });
               if (outside.length === 0) return;
               // 清 section 里所有旧 TOC + 移最新的过来
-              section.querySelectorAll(":scope > nav.page_toc, :scope > .page_toc").forEach(function (el) {
-                el.remove();
-              });
+              section
+                .querySelectorAll(":scope > nav.page_toc, :scope > .page_toc")
+                .forEach(function (el) {
+                  el.remove();
+                });
               var latest = outside[outside.length - 1];
               outside.forEach(function (el) {
                 if (el !== latest && el.parentElement) el.remove();
@@ -166,11 +243,15 @@
               var section = document.querySelector("section.content");
               var article = document.querySelector("article.markdown-section");
               if (!section || !article) return;
-              var inArticle = article.querySelector(".docsify-pagination-container");
+              var inArticle = article.querySelector(
+                ".docsify-pagination-container",
+              );
               if (inArticle) {
-                section.querySelectorAll(":scope > .docsify-pagination-container").forEach(function (el) {
-                  el.remove();
-                });
+                section
+                  .querySelectorAll(":scope > .docsify-pagination-container")
+                  .forEach(function (el) {
+                    el.remove();
+                  });
                 inArticle.style.gridColumn = "1";
                 inArticle.style.order = "1";
                 section.appendChild(inArticle);
@@ -188,16 +269,18 @@
               footer.innerHTML =
                 '<span class="footer-quote">盛年不重来，一日难再晨。</span>' +
                 '<span class="footer-meta">' +
-                  '<a href="https://newzone.top/" target="_blank" rel="noopener">LearnData</a>' +
-                  '&nbsp;·&nbsp;<span id="sitetime"></span>' +
-                '</span>';
+                '<a href="https://newzone.top/" target="_blank" rel="noopener">LearnData</a>' +
+                '&nbsp;·&nbsp;<span id="sitetime"></span>' +
+                "</span>";
               section.appendChild(footer);
             }
             // 给 sidebar 与 TOC 落地 aria-controls 指向的 id（docsify 不会自动加）
             function ensureAriaTargets() {
               var sb = document.querySelector("aside.sidebar");
               if (sb && !sb.id) sb.id = "sidebar";
-              var toc = document.querySelector('section.content > nav.page_toc, section.content > .page_toc, section.content > nav[class*="page_toc"]');
+              var toc = document.querySelector(
+                'section.content > nav.page_toc, section.content > .page_toc, section.content > nav[class*="page_toc"]',
+              );
               if (toc && !toc.id) toc.id = "page-toc";
             }
             function moveAll() {
@@ -210,9 +293,11 @@
               // 路由切换前清掉 section 里旧 TOC（如果新页面没 TOC，section 保持空；有则后面 move 过来）
               var section = document.querySelector("section.content");
               if (section) {
-                section.querySelectorAll(":scope > nav.page_toc, :scope > .page_toc").forEach(function (el) {
-                  el.remove();
-                });
+                section
+                  .querySelectorAll(":scope > nav.page_toc, :scope > .page_toc")
+                  .forEach(function (el) {
+                    el.remove();
+                  });
               }
               next(content);
             });
@@ -226,107 +311,15 @@
       };
     </script>
 
-    <script src="https://oss.newzone.top/docsify/main/4.13.1/docsify.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/main/4.13.1/plugins/search.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/main/4.13.1/plugins/zoom-image.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="https://oss.newzone.top/docsify/docsify-toc/dist/toc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-toc@1/dist/toc.js"></script>
 
     <!-- 网站运行时间统计的 setInterval 已并入 reading-app.js -->
-    <script src="https://oss.newzone.top/docsify/docsify-count/dist/countable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@1/dist/countable.min.js"></script>
 
-    <!-- Waline v3 评论系统 -->
-    <script type="module">
-      import { init, pageviewCount } from "https://oss.newzone.top/@waline/3.8.0/client/dist/waline.js";
-
-      const walineConfig = window.$docsify?.waline || {};
-      if (!walineConfig.serverURL) {
-        console.warn("[Waline] serverURL is required");
-      } else {
-        let walineInstance = null;
-        const lang = window.$docsify?.count?.language || "chinese";
-        const suffix = lang === "chinese" ? "次阅读" : " views";
-
-        function createContainer() {
-          let container = document.getElementById("waline");
-          if (!container) {
-            container = document.createElement("div");
-            container.id = "waline";
-          }
-          return container;
-        }
-
-        function initWaline() {
-          const article = document.querySelector("article.markdown-section");
-          if (!article) return;
-          // 把 Waline 评论区放在 section.content 直接子（与 article 同级），
-          // 这样它能占满 grid 第 1 列宽度，而不是被 article 的 max-width: 700 限制
-          const section = document.querySelector("section.content");
-          const target = section || article;
-
-          const container = createContainer();
-          if (!target.contains(container)) {
-            // 移除可能存在的 inline style（让 CSS 接管宽度）
-            container.removeAttribute("style");
-            target.appendChild(container);
-          }
-
-          const path = (window.location.pathname + window.location.hash).replace(/\?.*$/, "");
-
-          const headerSpan = document.querySelector("#main div > span");
-          if (headerSpan) {
-            let counter = headerSpan.querySelector(".waline-pageview-count");
-            if (!counter) {
-              headerSpan.innerHTML += `&nbsp;|&nbsp;<span class="waline-pageview-count" data-path="${path}"></span>&nbsp;${suffix}`;
-            } else {
-              counter.setAttribute("data-path", path);
-              counter.textContent = "";
-            }
-          }
-
-          if (walineInstance?.destroy) walineInstance.destroy();
-
-          walineInstance = init({
-            el: "#waline",
-            serverURL: walineConfig.serverURL,
-            path: path,
-            pageview: true,
-            reaction: walineConfig.reaction || false,
-            locale: walineConfig.locales?.["/"] || {},
-            dark: 'html[data-theme="dark"]',
-          });
-
-          pageviewCount({
-            serverURL: walineConfig.serverURL,
-            path: path,
-            selector: ".waline-pageview-count",
-            update: true,
-          });
-        }
-
-        setTimeout(initWaline, 500);
-        setTimeout(initWaline, 1500);
-
-        let lastPath = "";
-        const observer = new MutationObserver(() => {
-          const currentPath = window.location.pathname + window.location.hash;
-          if (currentPath !== lastPath) {
-            lastPath = currentPath;
-            setTimeout(initWaline, 100);
-          }
-        });
-
-        const target = document.querySelector("#main");
-        if (target) {
-          observer.observe(target, { childList: true, subtree: true });
-        } else {
-          window.addEventListener("DOMContentLoaded", () => {
-            const t = document.querySelector("#main");
-            if (t) observer.observe(t, { childList: true, subtree: true });
-            setTimeout(initWaline, 500);
-          });
-        }
-      }
-    </script>
+    <!-- Waline 默认禁用；配置本站后端后再启用。 -->
   </body>
 </html>
