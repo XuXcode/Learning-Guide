@@ -2,7 +2,7 @@
 // https://theme-hope.vuejs.press/zh/config/style.html
 
 // 极简东方 · 朱砂主色（单一品牌主色，不再让用户切换 4 色）
-$theme-color: #a72b2a;
+$theme-color: #2459a6;
 
 // 分类 / 标签的取色环（color0…color8，按索引循环分配）
 // 主题默认是 #cf1322 #fa541c #f39c12 #2ecc71 #25a55b #10a5a5 #096dd9 #aa6fe9 #eb2f96，
@@ -27,8 +27,8 @@ $colors:
 // light: 比主 bg #faf6ef 略深一档
 // dark:  比主 bg #1c1814 略深一档，与 vitesse-dark 内层 <pre> 的 #121212 渐变过渡自然
 $code-bg-color: (
-  light: #f3eee5,
-  dark: #15110d,
+  light: #f6f8fa,
+  dark: #111722,
 );
 
 $code-color: (

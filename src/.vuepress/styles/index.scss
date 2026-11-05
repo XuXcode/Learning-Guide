@@ -606,3 +606,49 @@ body #waifu:hover #waifu-tips {
   }
 }
  */
+
+/* 工业软件开发组知识库：文档阅读界面。 */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: var(--font-sans);
+  --font-mono: "Cascadia Code", Consolas, monospace;
+  --heading-weight: 650;
+  --kb-entry-bg: #f0f5fc;
+  --vp-c-grey-text: #556174;
+  --vp-c-grey-hover: #e9eef5;
+  --vp-c-grey-bg: #f2f4f7;
+  --vp-c-grey-soft: #72849b1a;
+}
+[data-theme="dark"] {
+  --heading-weight: 600;
+  --kb-entry-bg: #202e43;
+  --vp-c-grey-text: #a9b6c9;
+  --vp-c-grey-hover: #2e3b4e;
+  --vp-c-grey-bg: #263142;
+  --vp-c-grey-soft: #91a8c21a;
+}
+.vp-sidebar { background: var(--vp-c-bg-alt); }
+.vp-sidebar .vp-sidebar-header { font-size: 0.8rem; letter-spacing: 0.03em; }
+.vp-sidebar .vp-sidebar-link { border-radius: 5px; }
+.vp-navbar { box-shadow: none; border-bottom: 1px solid var(--vp-c-divider); }
+.vp-navbar .vp-site-name { font-size: 1.05rem; font-weight: 650; }
+.vp-navbar .vp-brand-logo { height: 1.9rem; }
+.vp-page-title h1 { font-size: 1.95rem; line-height: 1.4; }
+#markdown-content { line-height: 1.85; }
+#markdown-content h2 { margin-top: 2.1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--vp-c-divider); font-size: 1.4rem; }
+#markdown-content h3 { font-size: 1.1rem; }
+#markdown-content p { text-align: start; }
+#markdown-content th { background: var(--vp-c-bg-alt); }
+#markdown-content td, #markdown-content th { padding: 0.75rem 0.9rem; }
+.kb-intro-label { margin-top: 0.6rem; color: var(--vp-c-text-mute); font-size: 0.85rem; letter-spacing: 0.06em; }
+.kb-reading-entry { margin: 1.5rem 0 2rem; padding: 0.8rem 1.1rem; border: 1px solid var(--vp-c-border); border-left: 3px solid var(--vp-c-accent); border-radius: 6px; background: var(--kb-entry-bg); }
+.kb-reading-entry p { margin: 0.3rem 0; }
+.vp-footer { font-size: 0.8rem; }
+@media (max-width: 719px) {
+  .vp-navbar .vp-site-name { max-width: 11rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.93rem; }
+  .vp-page-title h1 { font-size: 1.65rem; }
+  #markdown-content td, #markdown-content th { padding: 0.6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

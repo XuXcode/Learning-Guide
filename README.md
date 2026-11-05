@@ -1,6 +1,8 @@
-# 工业软件组学习指南
+# 工业软件开发组学习指南
 
 本仓库基于 LearnData 模板，独立部署至 **https://xuxcode.github.io/Learning-Guide/**。
+
+当前内容来自旧版《工业软件开发组培养方案》，按培养方案、三条学习路线、九项项目实践、学习资源和书目组织为知识库。文档入口位于 `src/guide/`、`src/practice/` 和 `src/resources/`，不使用博客列表。
 
 - 本项目使用 Node.js 24、`pnpm@12.11.2`、VuePress 2 和 Theme Hope。
 - 本地启动、文档编辑和部署说明见 [DEPLOYMENT.md](./DEPLOYMENT.md)。

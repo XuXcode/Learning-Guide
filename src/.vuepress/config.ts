@@ -19,7 +19,7 @@ export default defineUserConfig({
   // 网站语言，默认为中文
   lang: "zh-CN",
   // 网站标题
-  title: "工业软件组学习指南",
+  title: "工业软件开发组学习指南",
   // 网站描述
   description: "面向实验室新生的计算机技术学习路线、课程资源与项目实践指南。",
 
@@ -31,13 +31,12 @@ export default defineUserConfig({
   // 配置参考：https://vuepress.github.io/zh/reference/theme-api.html#templatebuild
   templateBuild: "./src/.vuepress/templateBuild.html",
 
-  // 禁止文件夹生成静态文件，参考 [VuePress 文档]（https://v2.vuepress.vuejs.org/zh/guide/page.html#routing）
+  // 仅发布培养方案知识库，上游示例保留在源码中，不参与构建与全文搜索。
   pagePatterns: [
-    "**/*.md",
-    "!_temp",
-    "!reading",
-    "!.vuepress",
-    "!node_modules",
+    "README.md",
+    "guide/**/*.md",
+    "practice/**/*.md",
+    "resources/**/*.md",
   ],
 
   plugins: [

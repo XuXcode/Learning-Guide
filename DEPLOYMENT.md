@@ -26,11 +26,13 @@ corepack pnpm docs:dev
 corepack pnpm docs:build
 ```
 
-输出在 `src/.vuepress/dist/`。开发及构建前自动复制 `src/reading/` 到 public，生成 `.nojekyll`；这些生成文件不提交。修改读书笔记后重启开发服务，或重新构建，以刷新静态副本。
+输出在 `src/.vuepress/dist/`。开发及构建前自动生成 `.nojekyll`，生成文件不提交。
+
+当前只发布知识库首页及 `src/guide/`、`src/practice/`、`src/resources/` 下的 Markdown。上游模板文章与 `src/reading/` 保留在源码中，不参与当前站点构建或搜索。
 
 ## 编写文档
 
-在 `src/` 新建 Markdown，例如 `src/guide/first-steps.md`：
+在相应章节目录新建 Markdown，例如 `src/guide/first-steps.md`：
 
 ```markdown
 ---
@@ -63,7 +65,7 @@ git push origin main
 ## 模板服务与归属
 
 - 保留原有 Markdown、布局、样式、LearnData 作者与许可归属。
-- 网站标题、描述、仓库、hostname 已配置为当前项目；hostname 为域名，VuePress base 单独指定子路径。
+- 网站使用知识库导航、侧边栏、页内目录与全文搜索，关闭博客、分类标签、时间轴及 RSS。网站标题、描述、仓库、hostname 已配置为当前项目；hostname 为域名，VuePress base 单独指定子路径。
 - 原作者 Giscus、Waline、Live2D 和导航社交入口默认禁用；统计配置维持禁用。启用评论时应配置自己的服务。
-- 独立读书笔记改用公共 jsDelivr 的 Docsify 资源。原文中的外链、引用图片及工具链接仍保留，访问这些内容需要对应第三方服务可用。
+- 原读书笔记和模板文件保留在仓库，不发布到当前知识库。培养方案中的外部资源链接按原文保留，访问需要对应第三方服务可用。
 - `scripts/config.js` 会组合 hostname 和 base，使 `llms.txt` 的文档链接指向本项目子路径。

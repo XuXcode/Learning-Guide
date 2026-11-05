@@ -4,10 +4,18 @@ import matter from "gray-matter";
 import { getAllMarkdownFiles, getCharLength } from "./lib/markdown-utils.js";
 import config from "./config.js";
 
-const { baseUrl: BASE_URL, title: SITE_TITLE, description: SITE_DESC } = config.site;
+const {
+  baseUrl: BASE_URL,
+  title: SITE_TITLE,
+  description: SITE_DESC,
+} = config.site;
 
-if (!BASE_URL) console.warn("⚠️ No baseUrl detected. Check .vuepress/theme.ts or set BASE_URL env var.");
-if (!SITE_TITLE) console.warn("⚠️ No site title detected. Check .vuepress/config.ts");
+if (!BASE_URL)
+  console.warn(
+    "⚠️ No baseUrl detected. Check .vuepress/theme.ts or set BASE_URL env var.",
+  );
+if (!SITE_TITLE)
+  console.warn("⚠️ No site title detected. Check .vuepress/config.ts");
 
 /**
  * Generate URL based on file path
@@ -53,7 +61,8 @@ function cleanDescription(text) {
   if (text == null) return "";
   if (Array.isArray(text)) text = text.filter(Boolean).join(" ");
   if (typeof text !== "string") {
-    if (typeof text === "number" || typeof text === "boolean") text = String(text);
+    if (typeof text === "number" || typeof text === "boolean")
+      text = String(text);
     else return "";
   }
   return text
@@ -68,7 +77,25 @@ function cleanDescription(text) {
 function main() {
   console.log("🔍 Scanning for Markdown files...");
   console.log(`🌐 Base URL: ${BASE_URL}`);
-  const files = getAllMarkdownFiles(config.docsDir, config.llms.excludedDirs);
+  const files = getAllMarkdownFiles(
+    config.docsDir,
+    config.llms.excludedDirs,
+  ).filter((file) => {
+    // 只列出已生成的页面，避免将未发布的上游示例写入知识库索引。
+    const relative = path
+      .relative(config.docsDir, file)
+      .replace(/\\/g, "/")
+      .split("/")
+      .map((segment) => segment.replace(/^_+/, ""))
+      .join("/")
+      .replace(/(^|\/)(README|index)\.md$/, "$1")
+      .replace(/\.md$/, ".html");
+    const output =
+      !relative || relative.endsWith("/") ? `${relative}index.html` : relative;
+    return fs.existsSync(
+      path.join(path.dirname(config.llms.outputFile), output),
+    );
+  });
   console.log(`📄 Found ${files.length} files.`);
 
   const pages = [];
@@ -80,7 +107,9 @@ function main() {
       const frontmatter = Object.keys(data).length > 0 ? data : null;
 
       let title = frontmatter?.title ? String(frontmatter.title) : null;
-      let description = frontmatter?.description ? cleanDescription(frontmatter.description) : null;
+      let description = frontmatter?.description
+        ? cleanDescription(frontmatter.description)
+        : null;
 
       // Fallback if no title in frontmatter
       if (!title) {
@@ -94,7 +123,15 @@ function main() {
       if (!description && title) {
         for (const line of body.split("\n")) {
           const trimmed = line.trim();
-          if (!trimmed || trimmed.startsWith("#") || trimmed.startsWith(">") || trimmed.startsWith("![") || trimmed.startsWith("```") || trimmed.startsWith("<")) continue;
+          if (
+            !trimmed ||
+            trimmed.startsWith("#") ||
+            trimmed.startsWith(">") ||
+            trimmed.startsWith("![") ||
+            trimmed.startsWith("```") ||
+            trimmed.startsWith("<")
+          )
+            continue;
 
           description = cleanDescription(trimmed);
           // 按显示宽度（中文=2）截断到约 200，与项目统一的 getCharLength 口径保持一致
@@ -145,7 +182,9 @@ function main() {
   }
 
   fs.writeFileSync(config.llms.outputFile, content, "utf-8");
-  console.log(`✅ Generated ${config.llms.outputFile} with ${pages.length} pages.`);
+  console.log(
+    `✅ Generated ${config.llms.outputFile} with ${pages.length} pages.`,
+  );
 }
 
 main();

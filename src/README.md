@@ -1,40 +1,40 @@
 ---
+title: 从这里开始学习
+description: 工业软件开发组的新生培养方案、学习路线、项目实践与参考资源。
 article: false
-title: 工业软件组学习指南
-description: 面向实验室新生的计算机技术学习路线、课程资源与项目实践指南。
-icon: fa6-solid:book-open-reader
+breadcrumb: false
+prev: false
+next: /guide/
 ---
 
-> 你看到的就是 [LearnData](https://github.com/rockbenben/LearnData) 模板的演示站点。
+<div class="kb-intro-label">工业软件开发组 · 知识库</div>
 
-## 这里是什么
+这份指南将组内培养方案整理成可以逐章阅读的学习文档。先了解培养目标，再选择学习方向，结合项目实践完成阶段学习。
 
-如果你刚通过 **Use this template** 创建了仓库并部署成功，恭喜 —— 这就是你的网站首页现在的样子。所有侧边栏内容、博客文章、读书笔记都是模板自带的演示样例。
+<div class="kb-reading-entry">
 
-接下来要做的：
+**第一次来到这里？** 从 [培养方案](./guide/README.md) 开始，了解小组介绍和培养目标。
 
-1. **替换内容**：删除 `src/_posts/` 下的示例博客、`src/reading/` 下的读书笔记示例，按 [samplepage.md](https://github.com/rockbenben/LearnData/blob/main/samplepage.md?plain=1) 的 frontmatter 规范写自己的内容
-2. **改写本页**：把 `src/README.md`（也就是这页）改成你自己的网站介绍
-3. **配置个人信息**：修改 `src/.vuepress/config.ts` 的 title、description、域名等
+</div>
 
-## 文档与帮助
+## 选择学习方向
 
-- 📖 **完整搭建 / 配置 / 部署 / FAQ**：[LearnData GitHub README](https://github.com/rockbenben/LearnData#readme)
-- 🌐 **真实使用案例**：[newzone.top](https://newzone.top) —— 博主基于本模板搭建的个人博客
-- 🎯 **进阶心得**：
-  - [知识管理与搜索](https://newzone.top/posts/2024-01-28-learndata-advanced.html) —— 节点搜索、Quicker 一键定位、`article` 标签、双链反思
-  - [自动化脚本](https://newzone.top/posts/2026-03-05-learndata-scripts-llm-seo.html) —— SEO 审计、`llms.txt`、读书笔记侧边栏、Jules 定时维护
+| 学习方向   | 学习内容                                         | 阅读入口                              |
+| ---------- | ------------------------------------------------ | ------------------------------------- |
+| 后端开发   | Java → 数据库 → JavaWeb → Spring 框架 → 开发工具 | [后端学习路线](./guide/backend.md)    |
+| 前端开发   | 页面基础 → JavaScript 进阶 → HTTP → Ajax → 框架  | [前端学习路线](./guide/frontend.md)   |
+| 大数据基础 | Hadoop 集群 → HDFS 与 MapReduce → Hive 数据仓库  | [大数据学习路线](./guide/big-data.md) |
 
-## 模板内容结构
+## 学习与实践
 
-模板自带的演示内容按以下结构组织（fork 后建议按需替换）：
+- [项目实践](./practice/README.md)：查看 3 个方向的 9 项必做任务、学习目的和学期安排。
+- [学习网站](./resources/README.md)：找到旧版方案中的课程和视频入口。
+- [开发工具与补充学习](./resources/tools.md)：查阅开发环境、Linux、Git 等相关资源。
+- [参考书目](./resources/books.md)：按前端、后端和拓展阅读查找书籍。
+- [竞赛信息](./resources/competitions.md)：了解旧版培养方案中列出的赛事。
 
-- 置顶：日常习惯、健身、阅读
-- 软件应用、Docker 服务、系统问题、代码编程
-- 生活角落：说明书、生活记录和小技巧
-- 博客汇总：分类、标签、时间轴
+## 如何阅读这份指南
 
-## 反馈与社区
+左侧目录按学习内容组织，可随时切换章节；页面右侧的目录用于定位当前章节。查找课程、技术或项目时，可以使用顶部搜索。
 
-- 🐛 [GitHub Issues](https://github.com/rockbenben/LearnData/issues)
-- 💬 [Discord](https://discord.gg/PZTQfJ4GjX) · [Telegram](https://t.me/aishort_top) · [QQ 群](https://qm.qq.com/q/qvephMO8q4)
+本轮内容迁移自旧版《工业软件开发组培养方案》，保留原有课程、周数与实践要求。未填写或未写完整的内容已注明，详见 [迁移说明](./guide/migration.md)。

@@ -4,221 +4,73 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme(
   {
-    // 主题选项：https://theme-hope.vuejs.press/zh/config/theme/layout.html
     hostname: "https://xuxcode.github.io",
-    author: {
-      name: "LearnData",
-      url: "https://newzone.top",
-    },
-
-    // 现代浏览器优先用朱砂色 SVG，老浏览器自动 fallback 到 /favicon.ico
-    favicon: "/logo.svg",
-    logo: "/logo.svg",
-
-    // 网站文章的版权声明
-    license: "CC BY-NC-ND 4.0",
-
-    // 分隔符用「·」，与站内其它中文并列处一致；原来用 ASCII 连字符加一个孤立竖线，
-    // 读起来像日志行。两行之间用 <br /> 分开，中英各占一行。
-    copyright: `
-  版权声明：自由转载 · 非商用 · 非衍生 · 保持署名<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans" target="_blank" rel="noopener noreferrer">（创意共享 4.0 许可证）</a><br />
-  Copyright © 2023-present LearnData
-  `,
-    displayFooter: true,
-    // 页脚，支持使用 HTMLString 以显示备案信息等
-    // footer: `CC BY-NC-ND 4.0 Licensed`,
-
-    // 是否全局启用路径导航
-    breadcrumb: true,
-
-    // 覆盖主题自带 zh 文案里的三处问题（vuepress-theme-hope 的 routerLocales / paginationLocales）：
-    // 1. skipToContent 是「跳至主要內容」，「內」是繁体字。这条只有读屏软件会念到，
-    //    但它是全站每一页的第一个可聚焦元素。
-    // 2. 404 的四条提示（「这里什么也没有」「这 是 四 零 四 !」…）只表达情绪，
-    //    不说明发生了什么、下一步能做什么；按钮「带我回家」也不如直说去哪。
-    // 3. 分页输错页码时的提示是「请输入 1 到 $page 之前的页码！」。主题按
-    //    String.raw`\$page`（带反斜杠）做替换，而 locale 串里是 `$page`，永远替换不上，
-    //    于是模板变量原样端给用户；「之前」也应是「之间」。替换既然坏掉，
-    //    这里直接改成不需要插值的句子。
-    // routerLocales 不在 LayoutLocaleOptions 的类型里（只在 LayoutLocaleData 上），
-    // 但 getThemeData 会把 locales["/"] 整体并进 locale data，运行时生效。
-    locales: {
-      "/": {
-        routerLocales: {
-          skipToContent: "跳到主要内容",
-          notFoundTitle: "页面不存在",
-          // 主题从这个数组里随机取一条，所以拆成两句的写法永远只会显示其中一句。
-          // 合并成一条：说明发生了什么 + 下一步能做什么。
-          notFoundMsg: [
-            "这个地址下没有内容，可能已经改名或移走了。可以用上方搜索找标题，或从下面两个入口继续。",
-          ],
-          back: "返回上一页",
-          home: "回到首页",
-        },
-        paginationLocales: {
-          errorText: "没有这一页，请从上面的页码里选。",
-        },
-      },
-    } as never,
-
-    // 页面元数据：贡献者，最后修改时间，编辑链接
-    contributors: false,
-    lastUpdated: true,
-    editLink: false,
-
-    // 深色模式配置
-    // 用 toggle（默认浅色 + 一键切深色），不用 switch 的三态 auto：
-    // 抽样 120 张站内图片，亮度中位数 0.828、p75 0.918——大量是近白底的截图。
-    // 对照页面底色（宣纸 0.925 / 墨底 0.010），深色模式下有 62% 的图片
-    // 比背景亮 0.6 以上，整篇文章变成一串灯箱；浅色模式下这个数字是 0。
-    // 这是内容属性，配色改不动。而且「极简东方」的主背景本就是宣纸，浅色即设计主张。
-    darkmode: "toggle",
-    // 全屏按钮
-    fullscreen: true,
-
-    // 默认为 GitHub. 同时也可以是一个完整的 URL
+    favicon: "/knowledge-logo.svg",
+    logo: "/knowledge-logo.svg",
     repo: "XuXcode/Learning-Guide",
-    // 自定义仓库链接文字。默认从 `repo` 中自动推断为 "GitHub" / "GitLab" / "Gitee" / "Bitbucket" 其中之一，或是 "Source"。
     repoLabel: "GitHub",
-    // 是否在导航栏内显示仓库链接，默认为 `true`
-    repoDisplay: true,
-    // 文档存放路径
     docsDir: "src",
-
-    // navbar
-    navbar: navbar,
-    // 导航栏布局
+    docsBranch: "main",
+    navbar,
     navbarLayout: {
       start: ["Brand"],
       center: ["Links"],
       end: ["Repo", "Outlook", "Search"],
     },
-    // 是否在向下滚动时自动隐藏导航栏
-    // navbarAutoHide: "always",
-
-    // sidebar
-    sidebar: sidebar,
-    // 侧边栏排序规则
-    // sidebarSorter: ['readme', 'order', 'title'],
-
-    // 页面布局 Frontmatter 配置：https://theme-hope.vuejs.press/zh/config/frontmatter/layout.html#pageinfo
-    pageInfo: ["Category", "Tag", "Word", "ReadingTime", "PageView"],
-
-    // 主题功能选项：https://theme-hope.vuejs.press/zh/config/theme/feature.html
-    blog: {
-      articleInfo: ["Date", "PageView", "Category", "Tag", "ReadingTime"],
-      name: "工业软件组学习指南",
-      avatar: "/logo.svg",
-      description:
-        "面向实验室新生的计算机技术学习路线、课程资源与项目实践指南。",
-      medias: { GitHub: "https://github.com/XuXcode/Learning-Guide" },
-    },
-
-    // 隐藏打印按钮
-    // print: false,
-
+    sidebar,
+    breadcrumb: true,
+    pageInfo: false,
+    contributors: false,
+    lastUpdated: true,
+    editLink: true,
+    editLinkText: "编辑此页",
+    darkmode: "toggle",
+    fullscreen: false,
+    print: false,
+    displayFooter: true,
+    footer: "工业软件开发组 · 学习与实践文档",
+    copyright:
+      '基于 <a href="https://github.com/rockbenben/LearnData" target="_blank" rel="noopener noreferrer">LearnData</a> · VuePress Theme Hope',
+    locales: {
+      "/": {
+        routerLocales: {
+          skipToContent: "跳到主要内容",
+          notFoundTitle: "页面不存在",
+          notFoundMsg: ["请从左侧目录继续阅读，或使用搜索查找学习内容。"],
+          back: "返回上一页",
+          home: "回到指南首页",
+        },
+      },
+    } as never,
     markdown: {
-      // shiki 代码高亮主题
       highlighter: {
         type: "shiki",
-        // 代码块底色仍是 styles/config.scss 里的暖宣纸，这里只定 token 配色。
-        // 换掉 vitesse 是因为实测对比度：vitesse-light 的注释只有 2.02:1、
-        // 标点 2.47:1，而本站代码块里大量是中文注释；vitesse-dark 标点也只有 3.27:1。
-        // 逐个量过 shiki 全部内置主题后，github 的高对比版是唯一各项 token 都过 4.5 的
-        // （浅色最低 4.36，深色最低 8.86）。
         themes: {
           light: "github-light-high-contrast",
           dark: "github-dark-high-contrast",
         },
       },
-      align: true, // 启用自定义对齐
-      attrs: true, // 使用特殊标记为 Markdown 元素添加属性
-      mark: true, // 使用 == == 进行标记，注意两边需要有空格
-      // spoiler: true, // 使用 !! !! 标记剧透剧透文字，注意两边需要有空格
-      sup: true, // 上下角标
+      align: true,
+      attrs: true,
+      mark: true,
+      sup: true,
       sub: true,
-      include: true, // 导入文件
-      footnote: true, // 页脚格式支持
-      tasklist: true, // 启用任务列表格式支持，您可以传递一个对象来配置任务列表
-      component: true, // 使用 component 代码块来在 Markdown 中添加组件，YAML 和 JSON 的数据格式均受支持
-      figure: true, // 启用 figure
-      imgLazyload: true, // 启用图片懒加载
-      // imgMark: true, // 启用图片标记
-      imgSize: true, // 启用图片大小
-      hint: true, // 启用提示容器，默认启用
-      alert: true, // 启用 GFM 警告
+      include: true,
+      footnote: true,
+      tasklist: true,
+      figure: true,
+      imgLazyload: true,
+      imgSize: true,
+      hint: true,
+      alert: true,
     },
-
     plugins: {
-      blog: true,
-
-      // 设置为 { global: true, disableCopy: false } 则在复制 100 字符以上时显示版权，设置为 { global: true, disableCopy: true } 则是禁用复制
-      //copyright: { global: true, disableCopy: false },
-
-      icon: {
-        // https://theme-hope.vuejs.press/zh/guide/interface/icon.html
-        // 公用 CDN 在部分浏览器中可能无法正确显示图标。2024.07 开始，uBlock Origin 将拦截公有 CDN 的 js 请求。
-        // https://icon-sets.iconify.design/
-        assets: "iconify",
-      },
-
-      // 未配置本站评论服务前，禁用原模板的 Giscus / Waline。
+      // 知识库按文档目录阅读，不生成文章列表、标签或时间轴。
+      blog: false,
+      feed: false,
       comment: false,
-
-      // 组件库
-      components: {
-        components: ["Badge"],
-      },
-
-      media: {
-        embeds: ["bilibili"],
-      },
-
-      // Algolia 全文搜索：需要自己设置爬虫并生成下方配置，如不会设置，启用下方本地搜索
-      /* 
-      docsearch: {
-        // indices 是 DocSearch 的必填项。只给 indexName 时，点击搜索按钮会在
-        // 初始化阶段抛 "Cannot read properties of undefined (reading 'map')"，
-        // 而插件的点击回调是一次性的，抛错之后按钮就永久没有反应了。
-        indices: ["<INDEX_NAME>"],
-        appId: "<APP_ID>",
-        apiKey: "<API_KEY>",
-      },
-      */
-
-      // 本地搜索，和上方二选一
-      slimsearch: {
-        // 索引全部内容
-        indexContent: true,
-      },
-
-      feed: {
-        atom: true,
-        json: true,
-        rss: true,
-        count: 10,
-        sorter: (a, b) =>
-          Number(b.frontmatter.date) - Number(a.frontmatter.date),
-      },
+      slimsearch: { indexContent: true },
     },
-    // https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
-    // 加密配置样例（不需要可删除）注意，受到 VuePress 的限制，在未解密前，文章内容仅仅被隐藏，访问者仍可以从源码中获取文章的内容。
-    encrypt: {
-      config: {
-        // 这会加密整个 encrypt 目录，并且两个密码都是可用的
-        "/encrypt/": {
-          password: ["1234", "5678"],
-          hint: "从 xxx 获取密码",
-        },
-        // 这只会加密 /apps/encrypt03.html 页面
-        "/apps/encrypt03.html": {
-          password: "1234",
-          hint: "从 xxx 获取密码",
-        },
-      },
-    },
-
-    // 开发模式下是否启动热更新，显示所有更改并重新渲染
     hotReload: true,
   },
   { custom: true },

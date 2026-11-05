@@ -1,0 +1,1999 @@
+{
+  "sourceFile": "工业软件开发组培养方案.docx",
+  "originalTitle": "大数据组创新人才培养方案",
+  "sourceSha256": "d67d20b84c77977e25a9f7f573efa5b420f8642350005e6a720e505be4e92a8a",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "大数据组创新人才培养方案",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "小组介绍",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "本组是以大数据方向进行学习，组内分2个方向，分别是前端、后端。前端又被称为web前端，前端开发就是使用HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案来创建web页面或APP页面呈现给用户的过程。后端则是对web应用功能的实际逻辑的实现，后端开发就是创建完整可运行的Web应用服务端程序的过程。本组对前端的要求是对于前端整体架构熟悉掌握，能够利用前端的相关技术设计出具备良好的交互功能的页面。后端则是对于后端整体的布局以及运营进行掌控，利用后端相关技术、框架等来实现后端功能的运维，能很好的实现项目的业务逻辑。",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "培养目标",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "通过小组的学习，学员应达到如下目标：（根据实际情况列出）",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "前端：",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标1：学习HTML、CSS、JS三大前端语言。",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标2：学会Ajax实现前后端交互。",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标3：学习Node.js和Vue、React框架",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "后端：",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标1：学习Java语言",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标2：学习数据库Mysql、Redis,学习JDBC实现数据库连接",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标3：学习JavaWeb基础",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "目标4：掌握Spring、SpringMVC、Mybatis、SpringBoot等框架",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "教学过程安排",
+      "links": []
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          [
+            {
+              "text": "方向",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "知识模块",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习内容",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "周数",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "主要目标",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "实验项目",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "后端",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "后端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Java",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Java基础",
+              "links": []
+            },
+            {
+              "text": "集合",
+              "links": []
+            },
+            {
+              "text": "I/O",
+              "links": []
+            },
+            {
+              "text": "多线程",
+              "links": []
+            },
+            {
+              "text": "Jdbc",
+              "links": []
+            },
+            {
+              "text": "网络编程",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "熟悉Java",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "数据库学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Mysql语法:DDL DML DQL",
+              "links": []
+            },
+            {
+              "text": "Redis",
+              "links": []
+            },
+            {
+              "text": "influxdb",
+              "links": []
+            },
+            {
+              "text": "JDBC API",
+              "links": []
+            },
+            {
+              "text": "数据库四大特性",
+              "links": []
+            },
+            {
+              "text": "数据库连接池 ",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "熟悉数据库",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Web基础学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Http/TCP协议",
+              "links": []
+            },
+            {
+              "text": "Servlet",
+              "links": []
+            },
+            {
+              "text": "Filter",
+              "links": []
+            },
+            {
+              "text": "Listener",
+              "links": []
+            },
+            {
+              "text": "Tomcat",
+              "links": []
+            },
+            {
+              "text": "Jsp(了解)",
+              "links": []
+            },
+            {
+              "text": "Session",
+              "links": []
+            },
+            {
+              "text": "Cookie",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "熟悉JavaWeb基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "框架",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Spring：ioc，aop",
+              "links": []
+            },
+            {
+              "text": "Springmvc",
+              "links": []
+            },
+            {
+              "text": "Mybatis",
+              "links": []
+            },
+            {
+              "text": "Springboot",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "熟悉Spring框架",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "其他",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Linux、Docker、git",
+              "links": []
+            },
+            {
+              "text": "Maven",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "熟悉Linux、Git的基本操作",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "前端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Html5+css+javascrip",
+              "links": []
+            },
+            {
+              "text": "Jqury",
+              "links": []
+            },
+            {
+              "text": "Html5+移动web开发",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "前端基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Js面向对象进阶",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "从内存角度到理解JS面向对象、基本类型、复杂类型、原型链、ES6中的面向对象、属性读写权限、设置器、访问器等",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Js基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "http服务",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "服务器基础知识，web服务器介绍、apache服务器搭建、http介绍 ",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "http基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "ajax编程",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Ajax简介和异步概念，ajax封装，xmlhttprequest对象介绍，ajax中缓存问题，json解析等",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "框架学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习前端比较流行的一些框架，比如bootstrap,vie",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "大数据基础",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Hadoop集群部署",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Linux的基本操作命令的学习以及hadoop环境的搭建",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "HDFS&MapReduce和MapReduce组件",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "MapReduce设计的目标、MapReduce架构和原理、MapReduce快速入门、",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "MapReduce组件和Hive数据仓库",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Mapper抽象类、Reducer抽象类、Split机制、Map和Reduce个数的确定、",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "实践内容（从第一学期开始要完成哪些具体大型作业项目）",
+      "links": []
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          [
+            {
+              "text": "方向",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "项目名称",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "实验目的和任务",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学期",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "实践",
+              "links": []
+            },
+            {
+              "text": "周数",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "开出",
+              "links": []
+            },
+            {
+              "text": "要求",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "后端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Java和linux",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：要会基本的java使用以及linux搭建基本的环境。",
+              "links": []
+            },
+            {
+              "text": "学习目的：为学习下一阶段做准备",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1-3周",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "后端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Mysql的sql语句以及ssm项目的学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：后端会基本的增删改查的sql语句，以及自己能写出接口的功能",
+              "links": []
+            },
+            {
+              "text": "学习目的：能够实现网站的基本功能",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "后端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Springboot的学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：以ssm为基础学习springboot以及集成一些websocket等一些技术。",
+              "links": []
+            },
+            {
+              "text": "学习目的：更加深入了解功能实现",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "前端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Html+css+javascrip",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：学习基础知识，以及完成表单等布局相关内容。",
+              "links": []
+            },
+            {
+              "text": "学习目的：网站前端的页面实现",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "前端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Ajax和微信小程序",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：学习开发微信小程序和学习ajax",
+              "links": []
+            },
+            {
+              "text": "目的：开发小程序和实现对接。",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "前端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Ajax对接后端",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：用ajax对接后端，得到后端数据，并写出页面进行呈现数据",
+              "links": []
+            },
+            {
+              "text": "学习目的：写出页面进行呈现数据",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "大数据基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Hadoop集群部署",
+              "links": []
+            },
+            {
+              "text": "",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：hadoop集群在服务器上",
+              "links": []
+            },
+            {
+              "text": "学习目的：能够",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "大数据基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "HDFS&MapReduce和MapReduce组件",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：HDFS&MapReduce和MapReduce组件的学习",
+              "links": []
+            },
+            {
+              "text": "学习目的：",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "大数据基础",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "MapReduce组件和Hive数据仓库",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习任务：MapReduce组件和Hive数据仓库",
+              "links": []
+            },
+            {
+              "text": "学习目的：MapReduce设计的目标、MapReduce架构和原理、MapReduce快速入门、Mapper抽象类、Reducer抽象类、Split机制、Map和Reduce个数的确定、",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "设计型",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "必做",
+              "links": []
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": " ",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "主要赛事",
+      "links": []
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          [
+            {
+              "text": "序号",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "竞赛名称",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "主办方",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "网站链接",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "预参赛人数",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "大创项目",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "湖南省教育厅 ",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "http://180.108.46.32:81/hunan_cxpt/ ",
+              "links": [
+                {
+                  "text": "",
+                  "url": "http://180.108.46.32:81/hunan_cxpt/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "10",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "互联网+",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "教育部",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://cy.ncss.org.cn/",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://cy.ncss.org.cn/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "3",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "中国软件杯",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "国家工业和信息化部、教育部、江苏省人民政府",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "http://www.cnsoftbei.com/",
+              "links": [
+                {
+                  "text": "",
+                  "url": "http://www.cnsoftbei.com/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "全国高校物联网应用创新大赛",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "教育部科技发展中心",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "http://iotcompetition.org/",
+              "links": [
+                {
+                  "text": "",
+                  "url": "http://iotcompetition.org/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "中国大学生服务外包创新创业大赛",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "中华人民共和国教育部、中华人民共和国商务部和无锡市人民政府",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "http://www.fwwb.org.cn/",
+              "links": [
+                {
+                  "text": "",
+                  "url": "http://www.fwwb.org.cn/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "主要学习网站（推荐）",
+      "links": []
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          [
+            {
+              "text": "序号",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "URL网址",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习内容",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "学习学期",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://how2j.cn/",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://how2j.cn/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Java及JS、Springboot等开发技术的基本学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://www.bilibili.com/video/av21557880?from=search&seid=15761202613009250687",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://www.bilibili.com/video/av21557880?from=search&seid=15761202613009250687"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Html和css学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "3",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://www.w3school.com.cn/sql/sql_update.asp",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://www.w3school.com.cn/sql/sql_update.asp"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Mysql命令的学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://www.bilibili.com/video/BV1Fi4y1S7ix/?spm_id_from=333.337.search-card.all.click&vd_source=ae5a310df51d9dbd83a10e8ff56ed1de",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://www.bilibili.com/video/BV1Fi4y1S7ix/?spm_id_from=333.337.search-card.all.click&vd_source=ae5a310df51d9dbd83a10e8ff56ed1de"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "SSM框架学习",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://www.bilibili.com/video/av59265965?from=search&seid=7297023412475761301",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://www.bilibili.com/video/av59265965?from=search&seid=7297023412475761301"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Springboot图书管理系统的搭建",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": " 编程相关内容",
+      "links": []
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          [
+            {
+              "text": "序号",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "内容",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "URI网址",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "相关内容介绍",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "1",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "个人博客网站的搭建和发布",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://blog.csdn.net/sinat_37781304/article/details/82729029",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://blog.csdn.net/sinat_37781304/article/details/82729029"
+                }
+              ]
+            },
+            {
+              "text": "https://blog.csdn.net/Simon__He/article/details/83715511",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://blog.csdn.net/Simon__He/article/details/83715511"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "Git，WindowShell基本使用、Github使用、Typora软件使用及图床搭建、RSS订阅",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": " 2",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "集成开发环境(IDE)的学生认证下载和使用",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://blog.csdn.net/qq_36667170/article/details/79905198?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166564300316800182123053%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=166564300316800182123053&biz_id=",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://blog.csdn.net/qq_36667170/article/details/79905198?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166564300316800182123053%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=166564300316800182123053&biz_id="
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "VScode、Datagrip、IDEA等的使用",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "3",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "Linux系统的学习及虚拟机的下载和安装",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://blog.csdn.net/m0_50519965/article/details/116175873",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://blog.csdn.net/m0_50519965/article/details/116175873"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "",
+              "links": []
+            },
+            {
+              "text": "VMWare或MobaXterm的下载",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "4",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "其他软件工具的下载推荐",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "https://www.iobit.com/en/update/iu/?name=iu&ver=11.1.0.18&lan=&to=update&user=1&insday=345&idata=eyJhc2MiOjEwLCJkYiI6MTAsImltZiI6MTAsIml1IjoxLCJzZCI6MTAsImlzdSI6MTAsImF1Ijox%0D%0AMH0%3D&insur=other",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://www.iobit.com/en/update/iu/?name=iu&ver=11.1.0.18&lan=&to=update&user=1&insday=345&idata=eyJhc2MiOjEwLCJkYiI6MTAsImltZiI6MTAsIml1IjoxLCJzZCI6MTAsImlzdSI6MTAsImF1Ijox%0D%0AMH0%3D&insur=other"
+                }
+              ]
+            },
+            {
+              "text": "https://7-zip.org/",
+              "links": [
+                {
+                  "text": "",
+                  "url": "https://7-zip.org/"
+                }
+              ]
+            }
+          ],
+          [
+            {
+              "text": "IObit Uninstaler、7-zip等",
+              "links": []
+            }
+          ]
+        ],
+        [
+          [
+            {
+              "text": "5",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "其他学习网站",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "自行搜索",
+              "links": []
+            }
+          ],
+          [
+            {
+              "text": "b站大学、csdn、github等",
+              "links": []
+            }
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "八、主要学习教材及参考书目",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "前端：  ",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《JavaScript 语言精粹(修订版)》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《数据结构与算法 JavaScript 描述》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《CSS 揭秘》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《JavaScript 高级程序设计, 第 3 版》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《ECMAScript 6 入门》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《JavaScript 函数式编程》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "后端：",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《Java从入门到精通》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《大话数据结构》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《数据库系统》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《Java EE互联网轻量级框架整合开发》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《JavaScript入门经典》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《鸟哥的Linux私房菜 ：基础学习篇》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "拓展书籍",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《java核心技术卷 Ⅰ》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《java核心技术卷 Ⅱ》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《深入理解Java虚拟机》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "《剑指offer》",
+      "links": []
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "links": []
+    }
+  ]
+}
