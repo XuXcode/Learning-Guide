@@ -1,4 +1,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://newzone.top/sitemap.xml
+Sitemap: https://xuxcode.github.io/Learning-Guide/sitemap.xml
