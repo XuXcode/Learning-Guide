@@ -34,7 +34,7 @@ jobs:
           cache: true
           require-lockfile: true
 
-      # 复制读书笔记到静态页面路径，并构建页面
+      # 构建培养方案知识库
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=8192

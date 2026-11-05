@@ -1,7 +1,5 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
-// 谷歌分析：启用时取消本行注释，并填回下方 plugins 里你自己的 GA4 ID
-// import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 
 // Shim navigator for SSR
 if (typeof navigator === "undefined") {
@@ -10,7 +8,6 @@ if (typeof navigator === "undefined") {
 }
 
 import theme from "./theme.js";
-import { faqSchemaPlugin } from "./plugins/faq-schema.js";
 
 export default defineUserConfig({
   // 网站路径默认为主域名。如果网站部署在子路径下，比如 xxx.com/yyy，那么 base 应该被设置为 "/yyy/"
@@ -31,7 +28,7 @@ export default defineUserConfig({
   // 配置参考：https://vuepress.github.io/zh/reference/theme-api.html#templatebuild
   templateBuild: "./src/.vuepress/templateBuild.html",
 
-  // 仅发布培养方案知识库，上游示例保留在源码中，不参与构建与全文搜索。
+  // 培养方案知识库页面。
   pagePatterns: [
     "README.md",
     "guide/**/*.md",
@@ -39,14 +36,6 @@ export default defineUserConfig({
     "resources/**/*.md",
   ],
 
-  plugins: [
-    // 谷歌分析：填回你自己的 GA4 ID 后，取消本段与顶部 import 的注释即可启用
-    // googleAnalyticsPlugin({
-    //   id: "G-XXXXXXXXXX",
-    // }),
-    // FAQ 结构化数据（frontmatter faq -> FAQPage JSON-LD）
-    faqSchemaPlugin(),
-  ],
   bundler: viteBundler({
     viteOptions: {
       plugins: [

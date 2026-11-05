@@ -23,15 +23,6 @@ if (!SITE_TITLE)
 function generateUrl(filePath) {
   const relativePath = path.relative(config.docsDir, filePath);
 
-  // Handle Docsify reading notes
-  if (relativePath.startsWith("reading" + path.sep)) {
-    const docsifyPath = relativePath
-      .replace(/^reading[\/\\]/, "")
-      .replace(/\\/g, "/")
-      .replace(/\.md$/, "");
-    return `${BASE_URL}/reading/#/${docsifyPath}`;
-  }
-
   // Handle VuePress pages
   // VuePress 会去掉路径段开头的下划线：src/_posts/x.md 的路由是 /posts/x.html。
   // 不跟着去下划线，产出的就是 404 链接（经 CDN 规则还会变成 .html.html）。

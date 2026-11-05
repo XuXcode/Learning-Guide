@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="keywords" content="工业软件开发组,培养方案,学习路线,项目实践,知识库" />
-    <!-- 移动端浏览器外壳着色：宣纸（亮）/ 暖墨黑（暗），与 --vp-c-bg 保持一致 -->
+    <meta
+      name="keywords"
+      content="工业软件开发组,培养方案,学习路线,项目实践,知识库"
+    />
+    <!-- 与文档主题保持一致的浏览器外壳颜色 -->
     <meta
       name="theme-color"
       content="#ffffff"
@@ -31,7 +34,9 @@
     </style>
     <script>
       const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
-      const systemDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
 
       if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
         document.documentElement.setAttribute("data-theme", "dark");
@@ -41,11 +46,9 @@
     <!--vuepress-ssr-styles-->
     <!--vuepress-ssr-preload-->
     <!--vuepress-ssr-prefetch-->
-    <!-- 统计代码区域：在此粘贴你自己的 Google Tag Manager / Umami / 百度统计 等脚本 -->
   </head>
   <body>
     <div id="app"><!--vuepress-ssr-content--></div>
     <!--vuepress-ssr-scripts-->
-    <!-- Live2D 默认禁用；保留原资源与归属说明，避免加载模板专属服务。 -->
   </body>
 </html>
